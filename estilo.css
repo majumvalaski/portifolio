@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: rgba(157, 140, 121, 0.965);
+}
+
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;/*centraliza o menu*/
+    gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+}
+
+
+.imagem_leo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.principal {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: rgba(157, 140, 121, 0.965);
+    color: black;
+    text-align: center;
+}
+footer.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.idiomas {
+    list-style-type:none;
+    color: black;
+}
+.idiomas li {
+    margin-right: 1.2rem;
+}
+
+
+ul {
+    list-style-type: none;
+    color: rgba(157, 140, 121, 0.965);
+}
+
+a,
+a:link {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: solid rgba(157, 140, 121, 0.965) 1px;
+}
+
+li {
+    float: left;
+}
+/* Quando o mouse passe por cima */
+a:hover {
+    background-color: rgba(157, 140, 121, 0.965);
+    color: black;
+}
+
+.list2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.list2 {
+    float: right;
+}
+
+/* Estilos para os labels do formulário */
+.form label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+/* Estilos para os campos de entrada e textarea */
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: 100%; 
+    padding: 5px; 
+    margin-bottom: 10px; 
+}
+
+/* Estilos para o botão */
+.form button {
+    padding: 10px 20px; 
+    background-color: #000000; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; /* Altera o cursor para uma mãozinha quando passar o mouse */
+    margin-bottom: 1rem;
+}
+
+.form button:hover {
+    background-color: rgba(157, 140, 121, 0.965); /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* media query para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .imagem_leo {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .principal {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+}
