@@ -5,27 +5,21 @@ body {
 .container {
     display: grid;
 }
-
+/* barra colorida de cima da tela*/
 header {
     grid-column-start: 1;
     grid-column-end: 12;
     background-color: rgba(157, 140, 121, 0.965);
 }
 
+/* estilo do menu */
 .menu {
     grid-column-start: 6;
     grid-column-end: 12;
-    justify-content: center;/*centraliza o menu*/
-    gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+    justify-content: center;
+    gap: 20px;
 }
-
-
-.imagem_leo {
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-}
-
+/* section que alterna de uma página para outra*/
 .principal {
     grid-column-start: 4;
     grid-column-end: 12;
@@ -34,7 +28,7 @@ header {
     text-align: justify;
 
 }
-
+/* barra colorida embaixo da tela*/
 footer {
     grid-column-start: 1;
     grid-column-end: 12;
@@ -48,11 +42,11 @@ footer.container {
     align-items: center;
 }
 .idiomas {
-    list-style-type:none;
+    list-style-type:none; /* tira as bolinhas da listagem*/
     color: black;
 }
 .idiomas li {
-    margin-right: 1.2rem;
+    margin-right: 1.2rem; /* distância entre os itens no lado direito */
 }
 
 
@@ -60,7 +54,7 @@ ul {
     list-style-type: none;
     color: rgba(157, 140, 121, 0.965);
 }
-
+/* estilização dos links */
 a,
 a:link {
     text-decoration: none;
